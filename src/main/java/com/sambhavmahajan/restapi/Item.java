@@ -9,7 +9,7 @@ public class Item {
 	public Item(long ID, String Name) {
 		this.ID = ID;
 		this.Name = Name;
-		cnt = 1;
+		cnt = 0;
 	}
 	public long getID() {
 		return ID;
