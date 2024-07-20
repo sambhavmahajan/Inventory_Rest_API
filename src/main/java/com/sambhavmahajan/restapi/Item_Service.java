@@ -80,6 +80,8 @@ public class Item_Service {
 		if(!itemList.containsKey(id)) {
 			return "No such ID: " + id;
 		}
+		itemList.remove(id);
+		updateFile();
 		return "ID: " + id + " with Name: " + itemList.get(id).getName() + " was deleted.";
 	}
 	public String getItemInfo(long id) {
