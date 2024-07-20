@@ -28,7 +28,7 @@ public class ItemController {
 	public HashMap<Long, Item> all() {
 		return Iservice.itemList;
 	}
-	@GetMapping("/delete/{id}")
+	@PostMapping("/delete/{id}")
 	public String delete(@PathVariable("id") long id) {
 		return Iservice.deleteItem(id);
 	}
